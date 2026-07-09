@@ -1444,3 +1444,817 @@ Resolution :
   Resolution :
   # ⬇️ UPDATE THIS LINE ⬇️
       ami_type = "AL2023_x86_64_STANDARD"
+
+terraform apply --auto-approve
+random_string.suffix: Refreshing state... [id=5taOxpiS]
+data.aws_iam_policy.ebs_csi_policy: Reading...
+module.eks.module.eks_managed_node_group["consul"].data.aws_partition.current: Reading...
+module.eks.data.aws_caller_identity.current[0]: Reading...
+module.eks.module.kms.data.aws_caller_identity.current[0]: Reading...
+module.irsa-ebs-csi.data.aws_partition.current: Reading...
+module.irsa-ebs-csi.data.aws_caller_identity.current: Reading...
+module.eks.module.eks_managed_node_group["consul"].data.aws_caller_identity.current: Reading...
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/iac-terraform-eks-5taOxpiS/cluster]
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-072718ec2f901b8a2]
+module.eks.module.eks_managed_node_group["consul"].data.aws_partition.current: Read complete after 0s [id=aws]
+module.irsa-ebs-csi.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2830595799]
+module.eks.data.aws_partition.current[0]: Reading...
+data.aws_availability_zones.available: Reading...
+module.eks.module.kms.data.aws_partition.current[0]: Reading...
+module.eks.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks.module.eks_managed_node_group["consul"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...
+module.eks.module.eks_managed_node_group["consul"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296]
+module.eks.aws_iam_role.this[0]: Refreshing state... [id=iac-terraform-eks-5taOxpiS-cluster-20260709082704104400000002]
+module.eks.module.eks_managed_node_group["consul"].aws_iam_role.this[0]: Refreshing state... [id=consul-group-eks-node-group-20260709082704104400000001]
+module.irsa-ebs-csi.data.aws_caller_identity.current: Read complete after 0s [id=863852787437]
+module.eks.data.aws_iam_policy_document.custom[0]: Reading...
+module.eks.data.aws_iam_policy_document.custom[0]: Read complete after 0s [id=513122117]
+module.eks.aws_iam_policy.custom[0]: Refreshing state... [id=arn:aws:iam::863852787437:policy/iac-terraform-eks-5taOxpiS-cluster-20260709082704104500000003]
+module.eks.data.aws_caller_identity.current[0]: Read complete after 0s [id=863852787437]
+module.eks.data.aws_iam_session_context.current[0]: Reading...
+module.eks.data.aws_iam_session_context.current[0]: Read complete after 0s [id=arn:aws:iam::863852787437:user/iac-terraform-aws]
+module.eks.module.eks_managed_node_group["consul"].data.aws_caller_identity.current: Read complete after 0s [id=863852787437]
+module.eks.module.kms.data.aws_caller_identity.current[0]: Read complete after 1s [id=863852787437]
+data.aws_availability_zones.available: Read complete after 1s [id=us-east-2]
+data.aws_iam_policy.ebs_csi_policy: Read complete after 1s [id=arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy]
+module.eks.module.eks_managed_node_group["consul"].aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=consul-group-eks-node-group-20260709082704104400000001-20260709082706289900000004]
+module.eks.module.eks_managed_node_group["consul"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=consul-group-eks-node-group-20260709082704104400000001-20260709082706302400000005]
+module.eks.module.eks_managed_node_group["consul"].aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]: Refreshing state... [id=consul-group-eks-node-group-20260709082704104400000001-20260709082706367400000006]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=iac-terraform-eks-5taOxpiS-cluster-20260709082704104400000002-20260709082706608300000008]
+module.eks.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=iac-terraform-eks-5taOxpiS-cluster-20260709082704104400000002-20260709082706599100000007]
+module.eks.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=iac-terraform-eks-5taOxpiS-cluster-20260709082704104400000002-20260709082706703800000009]
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Reading...
+module.eks.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=2017448144]
+module.eks.module.kms.aws_kms_key.this[0]: Refreshing state... [id=86c14d60-994d-4dc9-b33c-01ff4a19e4bf]
+module.eks.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::863852787437:policy/iac-terraform-eks-5taOxpiS-cluster-ClusterEncryption2026070908273364220000000f]
+module.eks.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/iac-terraform-eks-5taOxpiS]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0820a64384a90635c]
+module.eks.aws_security_group.node[0]: Refreshing state... [id=sg-0e1de1a8eae3d0b71]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0747e173c9bc23bd0]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0cde0961a9421d846]
+module.eks.aws_security_group.cluster[0]: Refreshing state... [id=sg-06ed66ca998f5876e]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0579862dfe490b0ee]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-05c7e388f713e420a]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-06fe6f89c1f708d9e]
+module.vpc.aws_subnet.public[2]: Refreshing state... [id=subnet-0c75f28cb52cf8cd1]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0dfd1afe1f8a48ee9]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0968a68d249d8d581]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-03c1b9e43d0848af4]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-0c74bfd8eedb2c9bc]
+module.vpc.aws_subnet.private[2]: Refreshing state... [id=subnet-096bd3c76fb9a1f1b]
+module.eks.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=iac-terraform-eks-5taOxpiS-cluster-20260709082704104400000002-20260709082734912400000010]
+module.eks.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-3118809019]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-639658766]
+module.eks.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-501143255]
+module.eks.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-1497178920]
+module.eks.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-3729569434]
+module.eks.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-3351285088]
+module.eks.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-243460854]
+module.eks.aws_security_group_rule.node["ingress_self_all"]: Refreshing state... [id=sgrule-1617812755]
+module.eks.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-2038424860]
+module.eks.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-169284640]
+module.eks.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-2189412577]
+module.eks.aws_security_group_rule.node["ingress_cluster_all"]: Refreshing state... [id=sgrule-281679122]
+module.eks.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-1969786865]
+module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0948987c08785214f]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0747e173c9bc23bd01080289494]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0d744ed6cc2908226]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-03649b0420a771f68]
+module.vpc.aws_route_table_association.public[2]: Refreshing state... [id=rtbassoc-00c8f0c08276731ea]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-02f50af43425a8c46]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-019a4f2ee0c840633]
+module.vpc.aws_route_table_association.private[2]: Refreshing state... [id=rtbassoc-0a598b1673eb93bcc]
+module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-09d2821f5f2da1292]
+module.eks.aws_eks_cluster.this[0]: Refreshing state... [id=iac-terraform-eks-5taOxpiS]
+module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0cde0961a9421d8461080289494]
+data.aws_eks_cluster_auth.cluster: Reading...
+module.eks.time_sleep.this[0]: Refreshing state... [id=2026-07-09T08:36:36Z]
+data.aws_eks_cluster.cluster: Reading...
+module.irsa-ebs-csi.data.aws_iam_policy_document.assume_role_with_oidc[0]: Reading...
+data.aws_eks_cluster_auth.cluster: Read complete after 0s [id=iac-terraform-eks-5taOxpiS]
+module.eks.data.tls_certificate.this[0]: Reading...
+module.irsa-ebs-csi.data.aws_iam_policy_document.assume_role_with_oidc[0]: Read complete after 0s [id=3019152076]
+module.irsa-ebs-csi.aws_iam_role.this[0]: Refreshing state... [id=AmazonEKSTFEBSCSIRole-iac-terraform-eks-5taOxpiS]
+module.eks.module.eks_managed_node_group["consul"].module.user_data.null_resource.validate_cluster_service_cidr: Refreshing state... [id=4882615177983612174]
+module.eks.module.eks_managed_node_group["consul"].aws_launch_template.this[0]: Refreshing state... [id=lt-0d9d4dac067b513e7]
+data.aws_eks_cluster.cluster: Read complete after 0s [id=iac-terraform-eks-5taOxpiS]
+module.eks.data.tls_certificate.this[0]: Read complete after 0s [id=033a163afb2babc26f7883e642621ac361c93d61]
+module.eks.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::863852787437:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/AEB3F6B85CEDD990270FEAABE17ABB75]
+module.irsa-ebs-csi.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=AmazonEKSTFEBSCSIRole-iac-terraform-eks-5taOxpiS-20260709083609516600000012]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_eks_addon.ebs-csi will be created
+  + resource "aws_eks_addon" "ebs-csi" {
+      + addon_name               = "aws-ebs-csi-driver"
+      + addon_version            = (known after apply)
+      + arn                      = (known after apply)
+      + cluster_name             = "iac-terraform-eks-5taOxpiS"
+      + configuration_values     = (known after apply)
+      + created_at               = (known after apply)
+      + id                       = (known after apply)
+      + modified_at              = (known after apply)
+      + service_account_role_arn = "arn:aws:iam::863852787437:role/AmazonEKSTFEBSCSIRole-iac-terraform-eks-5taOxpiS"
+      + tags                     = {
+          + "eks_addon" = "ebs-csi"
+          + "terraform" = "true"
+        }
+      + tags_all                 = {
+          + "eks_addon" = "ebs-csi"
+          + "terraform" = "true"
+        }
+    }
+
+  # module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0] will be created
+  + resource "aws_eks_node_group" "this" {
+      + ami_type               = "AL2023_x86_64_STANDARD"
+      + arn                    = (known after apply)
+      + capacity_type          = (known after apply)
+      + cluster_name           = "iac-terraform-eks-5taOxpiS"
+      + disk_size              = (known after apply)
+      + id                     = (known after apply)
+      + instance_types         = [
+          + "t3a.medium",
+        ]
+      + node_group_name        = (known after apply)
+      + node_group_name_prefix = "consul-group-"
+      + node_role_arn          = "arn:aws:iam::863852787437:role/consul-group-eks-node-group-20260709082704104400000001"
+      + release_version        = (known after apply)
+      + resources              = (known after apply)
+      + status                 = (known after apply)
+      + subnet_ids             = [
+          + "subnet-03c1b9e43d0848af4",
+          + "subnet-096bd3c76fb9a1f1b",
+          + "subnet-0c74bfd8eedb2c9bc",
+        ]
+      + tags                   = {
+          + "Name" = "consul-group"
+        }
+      + tags_all               = {
+          + "Name" = "consul-group"
+        }
+      + version                = "1.34"
+
+      + launch_template {
+          + id      = "lt-0d9d4dac067b513e7"
+          + name    = (known after apply)
+          + version = "1"
+        }
+
+      + node_repair_config (known after apply)
+
+      + scaling_config {
+          + desired_size = 3
+          + max_size     = 3
+          + min_size     = 1
+        }
+
+      + timeouts {}
+
+      + update_config {
+          + max_unavailable_percentage = 33
+        }
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+aws_eks_addon.ebs-csi: Creating...
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Creating...
+aws_eks_addon.ebs-csi: Still creating... [00m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [00m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [00m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [00m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [00m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [00m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [00m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [00m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [00m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [00m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [01m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [01m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [02m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [02m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [03m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [03m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [04m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [04m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [05m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [05m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [06m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [06m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [07m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [07m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [08m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [08m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [09m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [09m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [10m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [10m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [11m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [11m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [12m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [12m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [13m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [13m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [14m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [14m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [15m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [15m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [16m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [16m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [17m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [17m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m10s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m40s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [18m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [18m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m00s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m20s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m30s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [19m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [19m50s elapsed]
+aws_eks_addon.ebs-csi: Still creating... [20m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [20m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [21m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [22m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [23m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [24m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [25m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [26m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [27m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [28m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [29m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [30m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [31m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m00s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m10s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m20s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m30s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m40s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Still creating... [32m50s elapsed]
+module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0]: Creation complete after 32m59s [id=iac-terraform-eks-5taOxpiS:consul-group-20260709091034638600000002]
+╷
+│ Warning: Running terraform apply again will remove the kubernetes add-on and attempt to create it again effectively purging previous add-on configuration
+│ 
+│   with aws_eks_addon.ebs-csi,
+│   on main.tf line 126, in resource "aws_eks_addon" "ebs-csi":
+│  126: resource "aws_eks_addon" "ebs-csi" {
+│ 
+╵
+╷
+│ Error: waiting for EKS Add-On (iac-terraform-eks-5taOxpiS:aws-ebs-csi-driver) create: timeout while waiting for state to become 'ACTIVE' (last state: 'DEGRADED', timeout: 20m0s)
+│ 
+│   with aws_eks_addon.ebs-csi,
+│   on main.tf line 126, in resource "aws_eks_addon" "ebs-csi":
+│  126: resource "aws_eks_addon" "ebs-csi" {
+│ 
+╵
+prashantubale@Sams-Mac eks % terraform apply --auto-approve
+random_string.suffix: Refreshing state... [id=5taOxpiS]
+.
+.
+Note: Objects have changed outside of Terraform
+
+Terraform detected the following changes made outside of Terraform since the last "terraform apply" which may have affected this plan:
+
+  # module.eks.module.eks_managed_node_group["consul"].aws_eks_node_group.this[0] has changed
+  ~ resource "aws_eks_node_group" "this" {
+        id                     = "iac-terraform-eks-5taOxpiS:consul-group-20260709091034638600000002"
+      + labels                 = {}
+        tags                   = {
+            "Name" = "consul-group"
+        }
+        # (15 unchanged attributes hidden)
+
+        # (4 unchanged blocks hidden)
+    }
+
+
+Unless you have made equivalent changes to your configuration, or ignored the relevant attributes using ignore_changes, the following plan
+may include actions to undo or respond to these changes.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # aws_eks_addon.ebs-csi is tainted, so must be replaced
+-/+ resource "aws_eks_addon" "ebs-csi" {
+      ~ addon_version            = "v1.62.0-eksbuild.1" -> (known after apply)
+      ~ arn                      = "arn:aws:eks:us-east-2:863852787437:addon/iac-terraform-eks-5taOxpiS/aws-ebs-csi-driver/04cfa312-5440-cfc1-524f-bb43159490a0" -> (known after apply)
+      + configuration_values     = (known after apply)
+      ~ created_at               = "2026-07-09T09:10:35Z" -> (known after apply)
+      ~ id                       = "iac-terraform-eks-5taOxpiS:aws-ebs-csi-driver" -> (known after apply)
+      ~ modified_at              = "2026-07-09T09:10:56Z" -> (known after apply)
+        tags                     = {
+            "eks_addon" = "ebs-csi"
+            "terraform" = "true"
+        }
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 1 to add, 0 to change, 1 to destroy.
+aws_eks_addon.ebs-csi: Destroying... [id=iac-terraform-eks-5taOxpiS:aws-ebs-csi-driver]
+aws_eks_addon.ebs-csi: Destruction complete after 10s
+aws_eks_addon.ebs-csi: Creating...
+
+aws_eks_addon.ebs-csi: Creation complete after 36s [id=iac-terraform-eks-5taOxpiS:aws-ebs-csi-driver]
+
+Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+
+Outputs:
+
+cluster_name = "iac-terraform-eks-5taOxpiS"
+region = "us-east-2"
+![alt text](<Screenshot 2026-07-09 at 3.26.00 PM.png>)
+
+# Provision an AKS Cluster
+open or add new terminal window and cd aks folder
+### log in to Azure using the Azure CLI
+az login
+
+After successful login create an Active Directory service principal account.
+$ az ad sp create-for-rbac --skip-assignment
+{
+  "appId": "******",
+  "displayName": "azure-cli-2021-04-22-17-52-06",
+  "name": "http://azure-cli-2021-04-22-17-52-06",
+  "password": "************",
+  "tenant": "********"
+}
+Replace appId and password 
+### terraform.tfvars
+appId    = "*****"
+password = "*****"
+
+### terraform init
+Initializing provider plugins found in the configuration...
+
+Initializing the backend...
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+
+## terraform plan
+
+rror: Error ensuring Resource Providers are registered.
+│ 
+│ Terraform automatically attempts to register the Resource Providers it supports to
+│ ensure it's able to provision resources.
+│ 
+│ If you don't have permission to register Resource Providers you may wish to use the
+│ "skip_provider_registration" flag in the Provider block to disable this functionality.
+│ 
+│ Please note that if you opt out of Resource Provider Registration and Terraform tries
+│ to provision a resource from a Resource Provider which is unregistered, then the errors
+│ may appear misleading - for example:
+│ 
+│ > API version 2019-XX-XX was not found for Microsoft.Foo
+│ 
+│ Could indicate either that the Resource Provider "Microsoft.Foo" requires registration,
+│ but this could also indicate that this Azure Region doesn't support this API version.
+│ 
+│ More information on the "skip_provider_registration" flag can be found here:
+│ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#skip_provider_registration
+│ 
+│ Original Error: determining which Required Resource Providers require registration: the required Resource Provider "Microsoft.MixedReality" wasn't returned from the Azure API
+│ 
+│   with provider["registry.terraform.io/hashicorp/azurerm"],
+│   on main.tf line 15, in provider "azurerm":
+│   15: provider "azurerm" {
+
+Resolution :
+
+Bypass Provider Registration
+provider "azurerm" {
+  features {}
+
+  # ⬇️ ADD THIS LINE ⬇️
+  skip_provider_registration = true
+}
+Fix the Missing Provider Check
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 4.0" # Or the latest 3.x release
+    }
+  }
+}
+
+Then run terraform init -upgrade to apply the update.
+terraform init, and plan
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # azurerm_kubernetes_cluster.default will be created
+  + resource "azurerm_kubernetes_cluster" "default" {
+      + ai_toolchain_operator_enabled       = false
+      + current_kubernetes_version          = (known after apply)
+      + dns_prefix                          = (known after apply)
+      + fqdn                                = (known after apply)
+      + http_application_routing_zone_name  = (known after apply)
+      + id                                  = (known after apply)
+      + kube_admin_config                   = (sensitive value)
+      + kube_admin_config_raw               = (sensitive value)
+      + kube_config                         = (sensitive value)
+      + kube_config_raw                     = (sensitive value)
+      + kubernetes_version                  = "1.26.3"
+      + location                            = "westus2"
+      + name                                = (known after apply)
+      + node_os_upgrade_channel             = "NodeImage"
+      + node_resource_group                 = (known after apply)
+      + node_resource_group_id              = (known after apply)
+      + oidc_issuer_enabled                 = (known after apply)
+      + oidc_issuer_url                     = (known after apply)
+      + portal_fqdn                         = (known after apply)
+      + private_cluster_enabled             = false
+      + private_cluster_public_fqdn_enabled = false
+      + private_dns_zone_id                 = (known after apply)
+      + private_fqdn                        = (known after apply)
+      + resource_group_name                 = (known after apply)
+      + role_based_access_control_enabled   = true
+      + run_command_enabled                 = true
+      + sku_tier                            = "Free"
+      + support_plan                        = "KubernetesOfficial"
+      + tags                                = {
+          + "environment" = "Dev"
+        }
+      + workload_identity_enabled           = false
+
+      + auto_scaler_profile (known after apply)
+
+      + bootstrap_profile (known after apply)
+
+      + default_node_pool {
+          + kubelet_disk_type    = (known after apply)
+          + max_pods             = (known after apply)
+          + name                 = "default"
+          + node_count           = 3
+          + node_labels          = (known after apply)
+          + orchestrator_version = (known after apply)
+          + os_disk_size_gb      = 30
+          + os_disk_type         = "Managed"
+          + os_sku               = (known after apply)
+          + scale_down_mode      = "Delete"
+          + type                 = "VirtualMachineScaleSets"
+          + ultra_ssd_enabled    = false
+          + vm_size              = "Standard_D2_v2"
+          + workload_runtime     = (known after apply)
+        }
+
+      + kubelet_identity (known after apply)
+
+      + network_profile (known after apply)
+
+      + node_provisioning_profile (known after apply)
+
+      + service_principal {
+          + client_id     = "a0b385d1-4fbd-45dc-9d3b-fdeb9cfb98d2"
+          + client_secret = (sensitive value)
+        }
+
+      + windows_profile (known after apply)
+    }
+
+  # azurerm_resource_group.default will be created
+  + resource "azurerm_resource_group" "default" {
+      + id       = (known after apply)
+      + location = "westus2"
+      + name     = (known after apply)
+      + tags     = {
+          + "environment" = "Dev"
+        }
+    }
+
+  # random_pet.prefix will be created
+  + resource "random_pet" "prefix" {
+      + id        = (known after apply)
+      + length    = 2
+      + separator = "-"
+    }
+
+Plan: 3 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + kubernetes_cluster_name = (known after apply)
+  + resource_group_name     = (known after apply)
+╷
+│ Warning: Argument is deprecated
+│ 
+│   with provider["registry.terraform.io/hashicorp/azurerm"],
+│   on main.tf line 17, in provider "azurerm":
+│   17:   skip_provider_registration = true
+│ 
+│ This property is deprecated and will be removed in v5.0 of the AzureRM provider. Please use the `resource_provider_registrations` property instead.
+╵
+╷
+│ Warning: Attribute Deprecated
+│ 
+│   with provider["registry.terraform.io/hashicorp/azurerm"],
+│   on main.tf line 17, in provider "azurerm":
+│   17:   skip_provider_registration = true
+│ 
+│ This property is deprecated and will be removed in v5.0 of the AzureRM provider. Please use the `resource_provider_registrations` property instead.
+
+Error: creating Kubernetes Cluster (Subscription: "15aab28c-d48a-469e-b70a-853e88871b16"
+│ Resource Group Name: "adapting-mongoose-aks"
+│ Kubernetes Cluster Name: "adapting-mongoose-aks"): performing CreateOrUpdate: unexpected status 400 (400 Bad Request) with response: {
+│   "code": "K8sVersionNotSupported",
+│   "details": null,
+│   "message": "Managed cluster adapting-mongoose-aks is on version 1.26.3 which is not supported in this region. Please use [az aks get-versions] command to get the supported version list in this region. For more information, please check https://aka.ms/supported-version-list",
+│   "subcode": ""
+│  }
+│ 
+│   with azurerm_kubernetes_cluster.default,
+│   on main.tf line 29, in resource "azurerm_kubernetes_cluster" "default":
+│   29: resource "azurerm_kubernetes_cluster" "default" {
+
+Resolution: az aks get-versions --location "West US 2" --output table
+# ⬇️ Update to a supported version ⬇️
+  kubernetes_version  = "1.36"
+
+  Error: creating Kubernetes Cluster (Subscription: "15aab28c-d48a-469e-b70a-853e88871b16"
+│ Resource Group Name: "adapting-mongoose-aks"
+│ Kubernetes Cluster Name: "adapting-mongoose-aks"): performing CreateOrUpdate: unexpected status 400 (400 Bad Request) with response: {
+│   "code": "BadRequest",
+│   "details": null,
+│   "message": "The VM size of Standard_D2_v2 is not allowed in your subscription in location 'westus2'. The available VM sizes are 'standard_b16als_v2,standard_b16as_v2,standard_b16ls_v2,standard_b16pls_v2,standard_b16ps_
+
+Resolution : in location = "East US 2"
+ default_node_pool {
+    name            = "default"
+    node_count      = 2
+    vm_size         = "Standard_D4s_v6"
+    os_disk_size_gb = 30
+  }
+
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+kubernetes_cluster_name = "adapting-mongoose-aks"
+resource_group_name = "adapting-mongoose-aks"
+![alt text](<Screenshot 2026-07-09 at 6.18.32 PM.png>)

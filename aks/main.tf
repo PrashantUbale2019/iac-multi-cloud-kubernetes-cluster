@@ -2,25 +2,27 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.63.0"
+     version = "~> 4.0"
     }
   }
 
   required_version = ">= 0.14"
 }
 
+
 resource "random_pet" "prefix" {}
 
 provider "azurerm" {
   features {}
+  skip_provider_registration = true
 }
 
 resource "azurerm_resource_group" "default" {
   name     = "${random_pet.prefix.id}-aks"
-  location = "West US 2"
+  location = "East US 2"
 
   tags = {
-    environment = "Demo"
+    environment = "Dev"
   }
 }
 
@@ -29,12 +31,12 @@ resource "azurerm_kubernetes_cluster" "default" {
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
   dns_prefix          = "${random_pet.prefix.id}-k8s"
-  kubernetes_version  = "1.26.3"
+  kubernetes_version  = "1.36"
 
   default_node_pool {
     name            = "default"
-    node_count      = 3
-    vm_size         = "Standard_D2_v2"
+    node_count      = 2
+    vm_size         = "Standard_D4s_v6"
     os_disk_size_gb = 30
   }
 
@@ -46,6 +48,6 @@ resource "azurerm_kubernetes_cluster" "default" {
   role_based_access_control_enabled = true
 
   tags = {
-    environment = "Demo"
+    environment = "Dev"
   }
 }
